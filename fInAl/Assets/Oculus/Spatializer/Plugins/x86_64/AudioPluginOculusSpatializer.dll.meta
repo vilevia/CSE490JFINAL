@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8b033faac19510d4cabc40f4870dee34
+=======
+guid: 455beaad753df474989066032533be77
+>>>>>>> b0b4dc6c3f56ed6102e414815a3f7113137b494c
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -12,17 +16,43 @@ PluginImporter:
   validateReferences: 1
   platformData:
   - first:
+<<<<<<< HEAD
       Any: 
     second:
       enabled: 1
+=======
+      '': Any
+    second:
+      enabled: 0
+      settings:
+        Exclude Editor: 0
+        Exclude Linux: 0
+        Exclude Linux64: 0
+        Exclude LinuxUniversal: 0
+        Exclude OSXUniversal: 0
+        Exclude Win: 1
+        Exclude Win64: 0
+  - first:
+      Any: 
+    second:
+      enabled: 0
+>>>>>>> b0b4dc6c3f56ed6102e414815a3f7113137b494c
       settings: {}
   - first:
       Editor: Editor
     second:
+<<<<<<< HEAD
       enabled: 0
       settings:
         CPU: x86_64
         DefaultValueInitialized: true
+=======
+      enabled: 1
+      settings:
+        CPU: x86_64
+        DefaultValueInitialized: true
+        OS: Windows
+>>>>>>> b0b4dc6c3f56ed6102e414815a3f7113137b494c
   - first:
       Facebook: Win
     second:
@@ -36,7 +66,40 @@ PluginImporter:
       settings:
         CPU: AnyCPU
   - first:
+<<<<<<< HEAD
+=======
+      Standalone: Linux
+    second:
+      enabled: 1
+      settings:
+        CPU: None
+  - first:
+>>>>>>> b0b4dc6c3f56ed6102e414815a3f7113137b494c
       Standalone: Linux64
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+<<<<<<< HEAD
+      Standalone: OSXUniversal
+    second:
+      enabled: 0
+      settings:
+=======
+      Standalone: LinuxUniversal
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      Standalone: OSXIntel
+    second:
+      enabled: 0
+      settings:
+        CPU: None
+  - first:
+      Standalone: OSXIntel64
     second:
       enabled: 1
       settings:
@@ -44,8 +107,9 @@ PluginImporter:
   - first:
       Standalone: OSXUniversal
     second:
-      enabled: 0
+      enabled: 1
       settings:
+>>>>>>> b0b4dc6c3f56ed6102e414815a3f7113137b494c
         CPU: x86_64
   - first:
       Standalone: Win
