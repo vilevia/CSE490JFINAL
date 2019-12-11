@@ -6,6 +6,8 @@ using UnityEngine.Events;
 /// This is a target for use in the shooting gallery
 /// If hit by an object with a Projectile component, runs the OnProjectileHit event show in the inspector 
 /// </summary>
+/// 
+
 public class ProjectileTarget : MonoBehaviour
 {
     public UnityEvent OnProjectileHitEvent;
@@ -22,6 +24,7 @@ public class ProjectileTarget : MonoBehaviour
             Debug.Log("ProjectileHitEvent sent: " + projectile.name);
             if (OnProjectileHitEvent != null) {
                 OnProjectileHitEvent.Invoke();
+
             }
             // Do reaction defined in this class
             HitReaction(projectile);
