@@ -26,7 +26,7 @@ public class TargetController : MonoBehaviour
                 Debug.Log("Collision Detected: " + collision.gameObject.name);
                 OnProjectileHitEvent.Invoke();
             }
-            anim.SetInteger("Trigger 0", 1);
+            anim.SetTrigger("Dance");
             source.Play();
         }
 
