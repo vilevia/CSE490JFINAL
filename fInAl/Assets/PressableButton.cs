@@ -5,7 +5,7 @@ using UnityEngine;
 public class PressableButton : MonoBehaviour
 {
     public int method;
-    public GameObject soup;
+    public GameObject text;
 
     public void Pressed()
     {
@@ -14,10 +14,15 @@ public class PressableButton : MonoBehaviour
         {
             Soup_Button();
         }
+        TextButton();
     }
 
     private void Soup_Button()
     {
-        soup.SetActive(!soup.activeSelf);
+
+    }
+
+    private void TextButton() {
+        text.SetActive(!text.activeSelf);
     }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Larsena1\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Larsena1\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_fInAl.-51002794.00" t="ExcludeRecursive" />
-    <e p="Z:\WindowsFolders\Desktop\CSE490j\CSE490JFINAL\fInAl" t="IncludeRecursive">
+    <e p="C:\Users\yarf2\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\yarf2\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_fInAl.-517928054.00" t="ExcludeRecursive" />
+    <e p="C:\Users\yarf2\Desktop\College Stuff\sophomore-year\CSE490j\CSE490JFINAL\fInAl" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -727,8 +727,19 @@
           </e>
         </e>
         <e p="Unit Tests" t="Include">
+          <e p="CoinFollower" t="Include">
+            <e p="CoinDetector.cs" t="Include" />
+            <e p="CoinFollower.cs" t="Include" />
+          </e>
+          <e p="CorruptionSlither" t="Include">
+            <e p="LookAtJoint.cs" t="Include" />
+            <e p="LookAtJointExecutionOrdering.cs" t="Include" />
+          </e>
+          <e p="FasterThrowing" t="Include">
+            <e p="ThrowableObject.cs" t="Include" />
+          </e>
           <e p="ItemDuplicator" t="Include">
-            <e p="GrabableSpawner.cs" t="Include" />
+            <e p="ObjectSpawner.cs" t="Include" />
           </e>
           <e p="PaperStack_keyboard" t="Include">
             <e p="StackablePaper.cs" t="Include" />

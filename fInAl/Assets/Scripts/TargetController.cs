@@ -1,13 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SocialPlatforms;
+using Random = System.Random;
 
 public class TargetController : MonoBehaviour
 {
     public UnityEvent OnProjectileHitEvent;
     public Animator anim;
     public AudioSource source;
+
+    public float speed;
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -23,5 +29,14 @@ public class TargetController : MonoBehaviour
             anim.SetInteger("Trigger 0", 1);
             source.Play();
         }
+
+        if (collision.gameObject.tag == "bottom") {
+            this.transform.position =
+                new Vector3(transform.position.x, transform.position.y + 6, transform.position.z);
+        }
+    }
+
+    void Update() {
+        this.transform.Translate(Vector3.down * speed * Time.deltaTime);
     }
 }
