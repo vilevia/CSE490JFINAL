@@ -229,13 +229,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d504fa5e2b3df4ab4a61d2c74cb353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
   spawnedGrabable: {fileID: 354127709934377513, guid: 925fbeebe1bce3642b603469394d244f,
     type: 3}
+  monitoredObject: {fileID: 0}
 --- !u!1 &1126298417
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +799,7 @@ PrefabInstance:
     - target: {fileID: 5247967302798566971, guid: 48a5edd5258a9d1448ebf5dce1b702c9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.298
+      value: 1.117
       objectReference: {fileID: 0}
     - target: {fileID: 5247967302798566971, guid: 48a5edd5258a9d1448ebf5dce1b702c9,
         type: 3}
@@ -850,6 +846,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5247967302798566971, guid: 48a5edd5258a9d1448ebf5dce1b702c9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.17289001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5247967302798566971, guid: 48a5edd5258a9d1448ebf5dce1b702c9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.17289001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5247967302798566971, guid: 48a5edd5258a9d1448ebf5dce1b702c9,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.17289001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5247967302798566917, guid: 48a5edd5258a9d1448ebf5dce1b702c9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5247967302798566918, guid: 48a5edd5258a9d1448ebf5dce1b702c9, type: 3}
+    - {fileID: 5247967302798566919, guid: 48a5edd5258a9d1448ebf5dce1b702c9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 48a5edd5258a9d1448ebf5dce1b702c9, type: 3}
