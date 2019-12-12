@@ -10,17 +10,22 @@ public class StackablePaper : MonoBehaviour
     public Transform aboveSnapPoint;
     public Transform belowSnapPoint;
 
+
+    public float restackDelay = 2; // the amount of time it takes to be stackable after falling off a stack
     public float maxTiltPerSec = 30;
     public float fallTiltAngle = 45;
     public AnimationCurve NormalizedAngleToTiltSpeed;
 
 
     private Rigidbody rb;
+    private bool canStack = true;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        aboveSnapPoint.localScale = new Vector3(1 / transform.localScale.x, 1 / transform.localScale.y, 1 / transform.localScale.z);
+        belowSnapPoint.localScale = new Vector3(1 / transform.localScale.x, 1 / transform.localScale.y, 1 / transform.localScale.z);
     }
 
     // Update is called once per frame
@@ -51,18 +56,20 @@ public class StackablePaper : MonoBehaviour
             below = null;
             transform.parent = null;
             rb.isKinematic = false;
+            StartCoroutine(UnstackableForTime(restackDelay));
+            rb.velocity = Random.insideUnitSphere / 2;
         }
     }
+
     public void AddToStack(StackablePaper paper) {
         if (above == null) {
             above = paper;
             above.below = this;
             above.transform.parent = aboveSnapPoint;
             aboveSnapPoint.rotation = Quaternion.identity;
-            transform.localRotation = Quaternion.identity;
+            paper.transform.localRotation = Quaternion.identity;
             SnapPaperToTop(above);
-            rb.isKinematic = true;
-            rb.velocity = Random.insideUnitSphere;
+            paper.rb.isKinematic = true;
         }
     }
 
@@ -82,5 +89,34 @@ public class StackablePaper : MonoBehaviour
     public void SnapPaperToTop(StackablePaper paper) {
         Vector3 positionOffset = aboveSnapPoint.transform.position - paper.belowSnapPoint.transform.position;
         paper.transform.position += positionOffset;
+    }
+
+    private void OnCollisionEnter(Collision other) {
+        StackablePaper otherStack = other.gameObject.GetComponent<StackablePaper>();
+        if (otherStack != null) {
+            if (transform.position.y < otherStack.transform.position.y) {
+                AddToStack(otherStack);
+            }
+        }
+    }
+
+    private void OnDrawGizmos() {
+        Gizmos.color = Color.red;
+        if(above != null) {
+            Gizmos.DrawLine(transform.position, aboveSnapPoint.transform.position);
+            Gizmos.DrawSphere(aboveSnapPoint.transform.position, 0.1f);
+        }
+        Gizmos.color = Color.blue;
+        if (below != null) {
+            Gizmos.DrawLine(transform.position, belowSnapPoint.transform.position);
+            Gizmos.DrawSphere(belowSnapPoint.transform.position, 0.1f);
+        }
+    }
+
+    private IEnumerator UnstackableForTime(float delay) {
+        canStack = false;
+        yield return new WaitForSeconds(delay);
+        canStack = true;
+
     }
 }
