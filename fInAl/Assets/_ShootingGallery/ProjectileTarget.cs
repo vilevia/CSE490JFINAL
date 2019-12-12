@@ -24,7 +24,6 @@ public class ProjectileTarget : MonoBehaviour
             Debug.Log("ProjectileHitEvent sent: " + projectile.name);
             if (OnProjectileHitEvent != null) {
                 OnProjectileHitEvent.Invoke();
-
             }
             // Do reaction defined in this class
             HitReaction(projectile);
