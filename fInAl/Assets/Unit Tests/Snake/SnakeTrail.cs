@@ -21,7 +21,7 @@ public class SnakeTrail : MonoBehaviour
     {
         points = new List<Vector3>();
         for (int i = 0; i < listMaxSize; i++) {
-            points.Add(transform.position + -transform.forward * i);
+            points.Add(transform.position + Vector3.forward * i);
         }
         prevPosition = transform.position;
     }
@@ -32,6 +32,9 @@ public class SnakeTrail : MonoBehaviour
         Vector3 inputVec = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         if (inputVec != Vector3.zero) {
             transform.LookAt(transform.position + Vector3.up, inputVec); ;
+        }
+        if (inputVec.magnitude > 1) {
+            inputVec.Normalize();
         }
         transform.position += inputVec * Time.deltaTime * moveSpeed;
 
@@ -70,7 +73,9 @@ public class SnakeTrail : MonoBehaviour
         
     }
 
+
     private void OnDrawGizmos() {
+
         Gizmos.color = Color.cyan;
         for (int i = 0; i < points.Count; i++) {
             Vector3 currPoint = GetCyclicIndex(points, i);
