@@ -10,6 +10,7 @@ public class SnakeTrail : MonoBehaviour
     private Vector3 prevPosition;
 
     [Space]
+    public GameObject followTarget;
     public float moveSpeed = 5;
 
     [Space]
@@ -27,9 +28,14 @@ public class SnakeTrail : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        Vector3 inputVec = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+    void Update() {
+        Vector3 inputVec = Vector3.zero;
+        if (followTarget == null) {
+            inputVec = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        } else {
+            inputVec = followTarget.transform.position - transform.position;
+        }
+
         if (inputVec != Vector3.zero) {
             transform.LookAt(transform.position + Vector3.up, inputVec); ;
         }
