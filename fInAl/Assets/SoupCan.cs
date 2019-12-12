@@ -5,11 +5,10 @@ using UnityEngine;
 public class SoupCan : MonoBehaviour
 {
     public GameObject lights;
-    private ParticleSystem particles;
+    public ParticleSystem[] particles;
     // Start is called before the first frame update
     void Start()
     {
-        this.particles = this.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -20,7 +19,10 @@ public class SoupCan : MonoBehaviour
 
     public void Grabbed()
     {
-        particles.Play();
+        foreach(ParticleSystem p in particles)
+        {
+            p.Play();
+        }
         lights.GetComponent<Animator>().Play("lights_angry");
         
         
