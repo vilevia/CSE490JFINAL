@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a6c8a1-dd52-45c3-9410-35b3f2a459bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.fInAl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.fInAl/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Prototype/Blue_proto_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Prototype/Blue_proto_mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PressableButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PressableButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alex Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alex Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/LightingData.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/Lightmap-0_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/Lightmap-0_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/Lightmap-0_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/Lightmap-0_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/ReflectionProbe-0.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alex Scene/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TargetController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TargetController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Museum_New.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Museum_New.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unit Tests/PaperStack_keyboard/StackablePaper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unit Tests/PaperStack_keyboard/StackablePaper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +81,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/PressableButton.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -112,6 +98,31 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Unit Tests/PaperStack_keyboard/StackablePaper.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-180">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <marker date="1576184474508" expanded="false" signature="6:78" ph="..." />
+                <marker date="1576184474508" expanded="true" signature="161:2581" ph="{...}" />
+                <marker date="1576184474508" expanded="true" signature="517:569" ph="{...}" />
+                <marker date="1576184474508" expanded="true" signature="628:1370" ph="{...}" />
+                <marker date="1576184474508" expanded="true" signature="839:879" ph="{...}" />
+                <marker date="1576184474508" expanded="true" signature="964:1004" ph="{...}" />
+                <marker date="1576184474508" expanded="true" signature="1058:1363" ph="{...}" />
+                <marker date="1576184474508" expanded="true" signature="1404:1581" ph="{...}" />
+                <marker date="1576184474508" expanded="true" signature="1433:1575" ph="{...}" />
+                <marker date="1576184474508" expanded="true" signature="1631:2028" ph="{...}" />
+                <marker date="1576184474508" expanded="true" signature="1660:2022" ph="{...}" />
+                <marker date="1576184474508" expanded="true" signature="2125:2355" ph="{...}" />
+                <marker date="1576184474508" expanded="true" signature="2170:2201" ph="{...}" />
+                <marker date="1576184474508" expanded="true" signature="2410:2579" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -120,6 +131,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TargetController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PressableButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Unit Tests/PaperStack_keyboard/StackablePaper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ApplyForceToObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SoupCan.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@6.9.0/Shaders/Lit.shader" root0="FORCE_HIGHLIGHTING" />
@@ -134,6 +146,7 @@
         <option value="$PROJECT_DIR$/Assets/SoupCan.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TargetController.cs" />
         <option value="$PROJECT_DIR$/Assets/PressableButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Unit Tests/PaperStack_keyboard/StackablePaper.cs" />
       </list>
     </option>
   </component>
@@ -242,12 +255,12 @@
       <workItem from="1575592889217" duration="1408000" />
       <workItem from="1575595233286" duration="1257000" />
       <workItem from="1576145715631" duration="1837000" />
-      <workItem from="1576175103705" duration="3301000" />
+      <workItem from="1576175103705" duration="4642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3301000" />
+    <option name="totallyTimeSpent" value="4642000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -260,7 +273,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
@@ -379,6 +391,29 @@
             <marker date="1576178432372" expanded="true" signature="297:344" ph="{...}" />
             <marker date="1576178432372" expanded="true" signature="404:417" ph="{...}" />
             <marker date="1576178432372" expanded="true" signature="449:498" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Unit Tests/PaperStack_keyboard/StackablePaper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <marker date="1576184474508" expanded="false" signature="6:78" ph="..." />
+            <marker date="1576184474508" expanded="true" signature="161:2581" ph="{...}" />
+            <marker date="1576184474508" expanded="true" signature="517:569" ph="{...}" />
+            <marker date="1576184474508" expanded="true" signature="628:1370" ph="{...}" />
+            <marker date="1576184474508" expanded="true" signature="839:879" ph="{...}" />
+            <marker date="1576184474508" expanded="true" signature="964:1004" ph="{...}" />
+            <marker date="1576184474508" expanded="true" signature="1058:1363" ph="{...}" />
+            <marker date="1576184474508" expanded="true" signature="1404:1581" ph="{...}" />
+            <marker date="1576184474508" expanded="true" signature="1433:1575" ph="{...}" />
+            <marker date="1576184474508" expanded="true" signature="1631:2028" ph="{...}" />
+            <marker date="1576184474508" expanded="true" signature="1660:2022" ph="{...}" />
+            <marker date="1576184474508" expanded="true" signature="2125:2355" ph="{...}" />
+            <marker date="1576184474508" expanded="true" signature="2170:2201" ph="{...}" />
+            <marker date="1576184474508" expanded="true" signature="2410:2579" ph="{...}" />
           </folding>
         </state>
       </provider>

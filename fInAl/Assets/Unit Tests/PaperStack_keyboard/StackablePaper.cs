@@ -14,6 +14,7 @@ public class StackablePaper : MonoBehaviour
     public float fallTiltAngle = 45;
     public AnimationCurve NormalizedAngleToTiltSpeed;
 
+
     private Rigidbody rb;
 
     // Start is called before the first frame update
