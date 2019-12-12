@@ -6,8 +6,8 @@ using UnityEngine.Events;
 public class TargetController : MonoBehaviour
 {
     public UnityEvent OnProjectileHitEvent;
-    //public Animator anim;
-    //public AudioSource source;
+    public Animator anim;
+    public AudioSource source;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -17,9 +17,11 @@ public class TargetController : MonoBehaviour
         {
             if (OnProjectileHitEvent != null)
             {
-                Debug.Log("Target hit asf boi");
+                Debug.Log("Collision Detected: " + collision.gameObject.name);
                 OnProjectileHitEvent.Invoke();
             }
+            anim.SetInteger("Trigger 0", 1);
+            source.Play();
         }
     }
 }
