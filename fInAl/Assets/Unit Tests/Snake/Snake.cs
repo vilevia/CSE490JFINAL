@@ -35,7 +35,7 @@ public class Snake : MonoBehaviour
             } else {
                 currentDistance += Vector3.Distance(joints[i - 1].transform.position, joints[i].transform.position);
             }
-            Debug.Log(currentDistance);
+            //Debug.Log(currentDistance);
             Vector3 targetPos = snakeTrail.GetPointFromStart(currentDistance);
             GameObject curr_joint = joints[i];
             Vector3 lookVector = targetPos - curr_joint.transform.position;
