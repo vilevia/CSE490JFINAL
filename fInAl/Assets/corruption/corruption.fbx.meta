@@ -3,7 +3,37 @@ guid: 18ac4a32ec08557458d412645e91c0e5
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body_mat
+    second: {fileID: 2100000, guid: d28e6a51a92c9e141a39e9628847f614, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cornea_mat
+    second: {fileID: 2100000, guid: 0ad6c560215376a49b6c20debe255188, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: face_mat
+    second: {fileID: 2100000, guid: 0993b14bb7219534793be0f1d2e3cd5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fake_eye_mat
+    second: {fileID: 2100000, guid: f93e1ad7d3495a449a63948263c37764, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: iris_mat
+    second: {fileID: 2100000, guid: b7c342ad53a17b04fa04627ed4596590, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: swan_swan_body_mat
+    second: {fileID: 2100000, guid: edfab03f76096464a85c6200ce8017b3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
