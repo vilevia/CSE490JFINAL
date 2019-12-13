@@ -356,6 +356,7 @@ Transform:
   - {fileID: 1211377762}
   - {fileID: 1192110510}
   - {fileID: 1838010251}
+  - {fileID: 331872329}
   m_Father: {fileID: 1125412004}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1109,6 +1110,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ed3fb5b6979a2b4aa43dff5215a0437, type: 3}
+--- !u!1 &331872328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 331872329}
+  m_Layer: 0
+  m_Name: SoupRespawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &331872329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331872328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.35, y: 2.619, z: 7.981}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 74080718}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &337958291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6539,7 +6570,7 @@ ParticleSystem:
     radiusScale: 1
   SubModule:
     serializedVersion: 2
-    enabled: 0
+    enabled: 1
     subEmitters:
     - serializedVersion: 3
       emitter: {fileID: 0}
@@ -7527,6 +7558,7 @@ MonoBehaviour:
   particles: {fileID: 683511441}
   angry_soup: Put the soup down! Now!
   passive_aggressive_soup: This is soup. Please don't touch.
+  respawn_spot: {fileID: 331872329}
   text: {fileID: 546562045}
 --- !u!114 &683511447
 MonoBehaviour:
@@ -8336,6 +8368,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5564138158343745777, guid: 6498dffd617d2c4419ec439ee203a005,
         type: 3}
+    - target: {fileID: 5247967302798566917, guid: 48a5edd5258a9d1448ebf5dce1b702c9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48a5edd5258a9d1448ebf5dce1b702c9, type: 3}
 --- !u!1 &848807353
@@ -13096,6 +13133,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f681da8dc1cf9b74594c3cef7e5c4cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnGrabberEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1921510018
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13288,6 +13341,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5564138158343745777, guid: 6498dffd617d2c4419ec439ee203a005,
         type: 3}
+    - target: {fileID: 5247967302798566917, guid: 48a5edd5258a9d1448ebf5dce1b702c9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48a5edd5258a9d1448ebf5dce1b702c9, type: 3}
 --- !u!1 &2017317411
