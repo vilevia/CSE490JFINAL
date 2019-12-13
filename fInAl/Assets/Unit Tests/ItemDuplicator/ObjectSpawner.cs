@@ -11,7 +11,11 @@ namespace OVRExtentions
         [Space]
         public OVRGrabbable spawnedGrabable;
         public GameObject monitoredObject;
+
+        private List<GameObject> spawnedGameobjects;
+
         public void Start() {
+            spawnedGameobjects = new List<GameObject>();
             // Ensures that there is a trigger set up on this gameobject
             GetComponent<Collider>().isTrigger = true;
             // Spawn first object
@@ -29,6 +33,18 @@ namespace OVRExtentions
         private void SpawnNewObject() {
             OVRGrabbable instGrabable = Instantiate(spawnedGrabable, transform.position, transform.rotation);
             monitoredObject = instGrabable.gameObject;
+            spawnedGameobjects.Add(instGrabable.gameObject);
+        }
+
+        [ContextMenu("Debug-DestroyAllSpawnedObjects")]
+        public void DestroyAllSpwanedObjects() {
+            foreach (GameObject obj in spawnedGameobjects) {
+                if (obj != null) {
+                    Destroy(obj);
+                }
+            }
+            spawnedGameobjects = new List<GameObject>();
+            SpawnNewObject();
         }
     }
 }
